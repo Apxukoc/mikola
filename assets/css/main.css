@@ -1,0 +1,475 @@
+@charset "UTF-8";
+
+body {
+    background-color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+
+#content {
+    width: 1330px;
+    background-color: #ffffff;
+    margin: 0 auto;
+}
+
+#headerinfo {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-auto-rows: minmax(20px, auto);
+    grid-template-areas:
+            "hil hrp hrp hrp hrp hrp hrp hrp hir";
+    font-family: 'Oglavie Unicode';
+}
+#headerinfoimgleft {
+    grid-area: hil;
+}
+
+#headerinfoimgleft img {
+    width: 170px;
+}
+
+#headerinfoblock {
+    grid-area: hrp;
+}
+
+#headerinfoimgright {
+    grid-area: hir;
+}
+
+#headerinfoimgright img {
+    width: 170px;
+}
+
+.headerinfoimg {
+    grid-area: him;
+}
+
+#headerinforpc {
+    font-family: 'Oglavie Unicode';
+    font-size: 3em;
+    color: #fdd835;
+    text-align: center;
+    text-shadow: 1px 1px 2px black, 0 0 0 #fdd835;
+}
+
+#headerinfomoscow {
+    font-family: 'Oglavie Unicode';
+    font-size: 2.5em;
+    color: #fdd835;
+    text-align: center;
+    text-shadow: 1px 1px 2px black, 0 0 0 #fdd835;
+}
+
+#headerinfoeparhiya {
+    font-family: 'Oglavie Unicode';
+    font-size: 2em;
+    text-align: center;
+    text-shadow: 1px 1px 2px black, 0 0 0 #fdd835;
+    color: #fdd835;
+}
+
+#headerinfochurch {
+    font-family: 'Monomakh Unicode';
+    font-size: 2em;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px black, 0 0 0 #fdd835;
+    color: #fdd835;
+}
+
+#headerplace {
+    font-family: 'Monomakh Unicode';
+    font-size: 1.5em;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px black, 0 0 0 #fdd835;
+    color: #fdd835;
+    border-bottom: solid 1px #fdd835;
+}
+
+#menulist {
+    border-bottom: solid 1px #fdd835;
+}
+
+nav.menunav {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: minmax(10px, auto);
+    grid-template-areas:
+            "m1 m2 m3 m4 m5";
+    padding: 15px;
+}
+
+.link1 {
+    grid-area: m1;
+}
+
+.link2 {
+    grid-area: m2;
+}
+
+.link3 {
+    grid-area: m3;
+}
+
+.link4 {
+    grid-area: m4;
+}
+
+.link5 {
+    grid-area: m5;
+}
+
+a.menulink {
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px black, 0 0 0 #fdd835;
+    color: #fdd835;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+a.menulink:hover {
+    color: #f9a825;
+}
+
+#data {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(20px, auto);
+    grid-template-areas:
+            "dl dl dl dl dl dl dl dl dl da da da";
+}
+
+#datalist {
+    grid-area: dl;
+    border-right: solid 1px #fdd835;
+}
+
+.cardnewsdata {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(20px, auto);
+    grid-template-areas:
+            "cni cni cni cni cnt cnt cnt cnt cnt cnt cnt cnt";
+}
+
+.cardnewstitle {
+   padding: 15px;
+}
+
+.cardnewstitlelink {
+    font-family: 'Monomakh Unicode';
+    text-shadow: 1px 1px 2px black, 0 0 0 #fdd835;
+    color: #fdd835;
+    font-size: 1.5em;
+    text-align: left;
+    padding: 15px;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+.cardnewstime {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #707070;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.cardnewsdataimg {
+    grid-area: cni;
+}
+
+.cardnewsdatatxt {
+    grid-area: cnt;
+    font-size: 1.2em;
+    margin-left: 15px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+.cardnewstitlelink:hover {
+    color: #f9a825;
+}
+
+.cardnewsdataimgdata {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.cardnewsshare {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(10px, auto);
+    grid-template-areas:
+            "sh1 sh2 sh3";
+}
+
+.share1 {
+    grid-area: sh1;
+}
+
+.share2 {
+    grid-area: sh2;
+}
+
+.share3 {
+    grid-area: sh3;
+}
+
+.cardnewsshareinfo {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #707070;
+}
+
+.menulinkshare {
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px black, 0 0 0 #fdd835;
+    color: #fdd835;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+.menulinkshare:hover {
+    background-color: #eeeeee;
+}
+
+.cardnewsborer {
+    margin-right: 15px;
+    margin-left: 15px;
+    border-bottom: solid 1px #fdd835;
+}
+
+aside {
+    grid-area: da;
+}
+
+/* WIDGET */
+
+.widget {
+    display: block;
+    position: relative;
+    margin-bottom: 2.6rem;
+    border-top: 2px solid #fdd835;
+    margin-top: 15px;
+}
+
+.widget span {
+    display: block;
+    text-align: center;
+}
+
+.widget h5 {
+    font-family: 'Monomakh Unicode';
+    font-size: 1.4em;
+    margin: 0 0 1.4em;
+    display: inline-block;
+    color: #fff;
+    background: #fdd835;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px black, 0 0 0 #fdd835;
+    letter-spacing: 1px;
+    padding-left: 10px;
+    padding-top: 8px;
+    padding-right: 10px;
+    padding-bottom: 2px;
+}
+
+.widget img {
+    width: 100%;
+}
+
+.datepostsierey {
+    color: #fdd835;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.85em;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    margin-top: -25px;
+    margin-left: 210px;
+}
+
+.showpostsierey {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
+    background-color: #ffffff;
+    margin-bottom: 10px;
+    padding: 3px;
+    position: relative;
+}
+
+.showpostsiereylink {
+    text-decoration: none;
+}
+
+li.showpostsiereyli {
+    background-color: #fdd835;
+    font-weight: bold;
+    font-size: 0.85em;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px black, 0 0 0 #fdd835;
+    color: #ffffff;
+    list-style-type: none;
+    padding: 10px;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+li.showpostsiereyli:hover {
+    background-color: #eeeeee;
+    text-shadow: 1px 1px 2px black, 0 0 0 #fdd835;
+    color: #fdd835;
+    list-style-type: none;
+    padding: 10px;
+}
+
+
+.showposts {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.showposts img {
+    width: 100%;
+}
+
+.showposts h2 {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    color: #ffffff;
+    text-align: left;
+    text-shadow: 1px 1px 2px black, 0 0 1em #fdd835;
+}
+
+.showpoststxt h6 {
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.showpoststxt {
+    margin-top: 18px;
+    background-color: #ffffff;
+}
+
+.showpoststxt p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    padding: 5px;
+}
+
+.showpoststitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.7em;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px #000000, 0 0 1em #ffffff;
+    margin-top: -80px;
+    z-index: 20;
+}
+
+.pravoslavieicon img {
+    object-fit: contain;
+    margin-top: 3px;
+}
+
+.pravoslavieday {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
+}
+
+.widgetimglink {
+    height: 415px;
+    object-fit: cover;
+}
+
+/* FOOTER */
+
+.footerrise {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 15px;
+    background-color: #eeeeee;
+}
+
+.footerdata {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(10px, auto);
+    grid-template-areas:
+            "fl fr";
+}
+
+.footerdataleft {
+    grid-area: fl;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    padding: 10px;
+    text-align: left;
+}
+
+.footerplace {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    text-align: left;
+    color: black;
+    padding: 3px;
+}
+
+.footerdataright {
+    grid-area: fr;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    padding: 10px;
+    text-align: right;
+}
+
+.footercopyright {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    text-align: left;
+    padding: 15px;
+    background-color: #eeeeee;
+}
+
+.footerdataleftname {
+    margin: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.footerdatarightlistname {
+    margin: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.footerlink {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+.footerdatarightlink {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
