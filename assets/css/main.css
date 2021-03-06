@@ -96,7 +96,6 @@ nav.menunav {
     grid-auto-rows: minmax(10px, auto);
     grid-template-areas:
             "m1 m2 m3 m4 m5";
-    padding: 15px;
 }
 
 .link1 {
@@ -119,22 +118,6 @@ nav.menunav {
     grid-area: m5;
 }
 
-a.menulink {
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    text-shadow: 1px 1px 2px black, 0 0 0 #fdd835;
-    color: #fdd835;
-    -webkit-transition: all .5s;
-    -o-transition: all .5s;
-    transition: all .5s;
-}
-
-a.menulink:hover {
-    color: #f9a825;
-}
-
 #data {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -146,6 +129,16 @@ a.menulink:hover {
 #datalist {
     grid-area: dl;
     border-right: solid 1px #fdd835;
+}
+
+.datalistinfo {
+    background-color: #eeeeee;
+    font-family: 'Monomakh Unicode';
+    font-size: 1.3em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 15px;
 }
 
 .cardnewsdata {
@@ -226,6 +219,24 @@ a.menulink:hover {
     font-size: 1.1em;
     font-weight: bold;
     color: #707070;
+}
+
+.menulink {
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px black, 0 0 0 #fdd835;
+    color: #fdd835;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+.menulink:hover {
+    background-color: #eeeeee;
 }
 
 .menulinkshare {
@@ -401,13 +412,7 @@ li.showpostsiereyli:hover {
 }
 
 /* FOOTER */
-
-.footerrise {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1em;
-    text-align: center;
-    text-transform: uppercase;
-    padding: 15px;
+footer {
     background-color: #eeeeee;
 }
 
@@ -467,6 +472,13 @@ li.showpostsiereyli:hover {
     text-decoration: none;
     color: black;
     padding: 10px;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+.footerlink:hover {
+    font-weight: bold;
 }
 
 .footerdatarightlink {

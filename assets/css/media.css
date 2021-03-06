@@ -1,2 +1,101 @@
 @charset "UTF-8";
 
+@media (max-width: 400px) {
+    #content {
+        width: 400px;
+    }
+
+    #headerinfo {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(20px, auto);
+        grid-template-areas:
+            "hil hir"
+            "hrp hrp";
+        font-family: 'Oglavie Unicode';
+    }
+
+    nav.menunav {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: minmax(10px, auto);
+        grid-template-areas:
+            "m1"
+            "m2"
+            "m3"
+            "m4"
+            "m5";
+        padding: 15px;
+    }
+
+    .menulink {
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 2px black, 0 0 0 #fdd835;
+        color: #fdd835;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        -webkit-transition: all .5s;
+        -o-transition: all .5s;
+        transition: all .5s;
+        border-bottom: solid 1px #eeeeee;
+    }
+
+    #data {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: minmax(20px, auto);
+        grid-template-areas:
+            "dl"
+            "da";
+    }
+
+    .cardnewsdata {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: minmax(20px, auto);
+        grid-template-areas:
+            "cni"
+            "cnt";
+    }
+
+    .cardnewsdataimgdata {
+        width: 390px;
+        height: 260px;
+        object-fit: cover;
+    }
+
+    .cardnewsshare {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: minmax(10px, auto);
+        grid-template-areas:
+                "sh1"
+                "sh2"
+                "sh3";
+    }
+
+    .widget img {
+        width: 390px;
+    }
+
+    .footerdata {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: minmax(10px, auto);
+        grid-template-areas:
+            "fl"
+            "fr";
+    }
+
+    .footerdataright {
+        grid-area: fr;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1em;
+        padding: 10px;
+        text-align: left;
+    }
+}
+
